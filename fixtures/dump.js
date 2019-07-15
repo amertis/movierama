@@ -16,7 +16,7 @@ function loadMovies () {
     let ratings = []
     movies = movies.map((movie) => {
         let id = mongoose.Types.ObjectId().toHexString()
-        let uploaderUser = `testUser${Math.floor(Math.random() * 100) + 1}`
+        let uploaderUser = `testUser${Math.floor(Math.random() * 99) + 1}`
         let ratingTypes = ['like', 'hate', 'none']
         let likesCount = 0;
         let hatesCount = 0;
