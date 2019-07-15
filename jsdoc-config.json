@@ -8,7 +8,7 @@
   },
   "source": {
     "include": [
-      "controllers",
+      "models",
       "models",
       "daos",
       "db",
@@ -16,7 +16,7 @@
       "middleware",
       "services"
     ],
-    "exclude": []
+    "exclude": ["controllers"]
   },
   "plugins": [
     "plugins/markdown"
