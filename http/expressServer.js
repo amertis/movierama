@@ -37,6 +37,12 @@ module.exports = () => {
             app.post('/api/movie',auth, movieController.addMovie)
             app.get('/api/movie', movieController.getMovies)
             app.get('/api/user/:id/movie', movieController.getMoviesForUser)
+            app.use((err, req, res, next) => {
+                log.error({err: err})
+                res.status(500).json({
+                    error: 'Internal Error occurred'
+                });
+            });
             appServer =  app.listen(port, cb)
         },
         stop: function (cb) {
