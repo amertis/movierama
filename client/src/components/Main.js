@@ -153,7 +153,10 @@ class Main extends React.Component {
                         </Nav.Item>
                         <Nav.Item>
                         </Nav.Item>
-                        {this.state.user ? <Button onClick={this.logout.bind(this)}>Logout</Button> : <Button data-key="/site/login" onClick={this.setRedirect}>Login</Button>}
+                        {this.state.user ? <Button onClick={this.logout.bind(this)}>Logout</Button> : <div>
+                            <Button data-key="/site/signup" onClick={this.setRedirect}>Signup</Button>
+                            <Button data-key="/site/login" onClick={this.setRedirect}>Login</Button>
+                        </div>}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
