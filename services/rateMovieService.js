@@ -5,9 +5,11 @@
  * (c) unlike
  * (d) unhate
  *
- * Likes and hates create a new record in the ratings collection and have to be unique per user/movie pair. If they are
- * not, the unique index constraint on the collection, will throw an exception. Later on, the corresponding ratings are
- * incremented.
+ * Likes and hates first check whether a past opposite user rating exists for the movie from the one the user now submits.
+ * If it exists, it will update the rating and then it will change the rating counters of the movie for both likes and hates.
+ * If a opposite user rating doesn't exist, then the system attempts to create a new rating. If the rating already exists,
+ * the unique constraint of the pair (user/movie) in the ratings collection will block the procedure. Otherwise, the
+ * procedure will continue and will end with the counter update.
  *
  * Unlikes and unhates just reverse the effects of likes and hates. They will remove the rating from the collection and
  * afterwards, they will decrement the corresponding counter.
