@@ -27,6 +27,7 @@ module.exports = () => {
 
             app.use(express.static('coverage'))
             app.use(express.static('mochawesome-report'))
+            app.use(express.static('docs'))
 
             app.get('/site/*', (req, res) => {
                 res.sendFile(path.resolve(__dirname, '../client/build/index.html'))
