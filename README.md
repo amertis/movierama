@@ -14,6 +14,11 @@ To access the application open:
 
 ```
 
+The application is initialized with ~50 dummy movies and a 100 users with dummy ratings.
+You can either create a new user or use one of the existing users as:
+* username: testUserX@gmail.com  with X:1..100 
+* password: test
+
 Also the following reports are available:
 ```
     api report: http://localhost:5000/docs/apidoc/index.html
@@ -24,11 +29,19 @@ Also the following reports are available:
 
 ### Features ###
 
-* Technologies: Node, React, MongoDB, Docker
+* Technologies: Node,Express, React, MongoDB, Docker
 
 
 ### Code Walkthrough ###
 
-* Docker
-* Validators
-* Error Handling
+* client: the react client
+* config: the server configuration
+* controllers: the http endpoints which validate input, route to appropriate service
+and return the result.
+* daos/db/models: Data access layer.
+* fixtures: test data for setting up the db
+* http: the http service layer.
+* middleware: modules running before the controllers in the request chain. e.g. authentication
+* services: the business logic layer.
+* tests: UAT and unit tests
+* validator: request validators.
