@@ -1,0 +1,6 @@
+.nyc_output
+.idea
+docs
+node_modules
+client/node_modules
+coverage/

@@ -1,0 +1,11 @@
+{
+  "name": "movierama",
+  "version": "0.1.0",
+  "description": "Movierama REST api documentation",
+  "title": "Movierama REST api documentation",
+  "url" : "http://localhost:5000/docs/apidoc/index.html",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}

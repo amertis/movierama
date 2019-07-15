@@ -1,0 +1,6 @@
+{
+  "db": "mongodb",
+  "dbUri": "mongodb://mongo:27017/movierama",
+  "port": 5000,
+  "jwtSecret": "P9jdf9@$jj"
+}

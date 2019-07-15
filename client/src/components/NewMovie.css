@@ -1,0 +1,19 @@
+@media all and (min-width: 480px) {
+    .NewMovie {
+        padding: 60px 0;
+    }
+
+    .NewMovie form {
+        margin: 0 auto;
+        max-width: 320px;
+    }
+    .NewMovie .error {
+        margin: 0 auto;
+        color: red;
+        text-align: center;
+    }
+    .NewMovie h1 {
+        text-align: center
+    }
+
+}
