@@ -19,7 +19,7 @@ Also the following reports are available:
     api report: http://localhost:5000/docs/apidoc/index.html
     JS code report: http://localhost:5000/docs/jsdoc/index.html
     test report: http://localhost:5000/docs/testreport/index.html
-    coverage report: http://localhost:5000/coverage/index.html
+    coverage report: http://localhost:5000/coverage/lcov-report/index.html
 ```
 
 ### Features ###
