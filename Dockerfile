@@ -24,11 +24,9 @@ WORKDIR /usr/src/app/client
 
 RUN npm install
 
-RUN npm run production
+RUN npm run build
 
 WORKDIR /usr/src/app
-
-RUN chmod +x wait-for.sh && dos2unix wait-for.sh
 
 RUN jsdoc -c jsdoc-config.json -t ./node_modules/ink-docstrap/template -R README.md
 
