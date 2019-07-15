@@ -41,7 +41,7 @@ class MovieCard extends React.Component {
             return <p>Please login in order to be able to rate the movie.</p>
         }
         let rate = undefined
-        if (this.state.movie.likesCount === 0 && this.state.movies.hatesCount === 0) {
+        if (this.state.movie.likesCount === 0 && this.state.movie.hatesCount === 0) {
             return <p>Be the first to rate this movie!</p>
         }
         if (!this.state.movie.userRating) {

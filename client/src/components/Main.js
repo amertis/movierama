@@ -107,7 +107,9 @@ class Main extends React.Component {
     onUserClick = (evt) => {
         this.setState({
             selectedUserId: evt.target.getAttribute('data-key-id'),
-            selectedUserDisplayName: evt.target.getAttribute('data-key-name')
+            selectedUserDisplayName: evt.target.getAttribute('data-key-name'),
+            page: 0,
+            sortFields: 'likesCount'
         }, async () => {
             await this.fetchMovies()
         })
@@ -134,7 +136,7 @@ class Main extends React.Component {
             {this.renderRedirect()}
             {this.renderBreadCrumb()}
             <Navbar>
-                <Navbar.Brand href="/">Movierama</Navbar.Brand>
+                <Navbar.Brand href="/site/">Movierama</Navbar.Brand>
                 <Navbar.Toggle />
                 <ButtonGroup>
                     <Button data-key="likesCount" onClick={this.getMoviesOrdered.bind(this)}>Sort By Likes</Button>
