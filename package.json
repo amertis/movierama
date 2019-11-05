@@ -21,7 +21,7 @@
     "joi": "^14.3.1",
     "jsrsasign": "^8.0.12",
     "moment": "^2.24.0",
-    "mongoose": "^5.6.4",
+    "mongoose": "^5.7.5",
     "nconf": "^0.10.0",
     "should": "^13.2.3",
     "supertest": "^4.0.2"
