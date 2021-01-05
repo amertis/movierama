@@ -4,7 +4,7 @@
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "joi": "^14.3.1",
     "joi-browser": "^13.4.0",
     "local-storage": "^2.0.0",
